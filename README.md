@@ -1,6 +1,5 @@
 # Development-environment-setting
 
-# Development-environment-setting
 
 ### Linux 설치
 Mac에서 ubuntu 부팅 usb 만들기 [link](https://lynmp.com/ko/article/roa0ea27bfcdf035b8) \
