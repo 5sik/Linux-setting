@@ -133,6 +133,7 @@ set laststatus=2
 conda config --set auto_activate_base false (자동 실행 막음)
 condo create -n (env 이름) (조건)
 condo activate (env 이름)
+#reference = [link](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
 ```
 
 ### 기타 설치 (tmux, git, htop, gpustat, imagemagick)
