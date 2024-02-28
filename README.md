@@ -8,7 +8,7 @@ Mac에서 ubuntu 부팅 usb 만들기 [link](https://lynmp.com/ko/article/roa0ea
 
 ### Linux 세팅
 Chrome 설치 [link](https://itsfoss.com/install-chrome-ubuntu/) \
-한글 설치 [link](https://iworldt.tistory.com/11) \ [link](https://staraube.tistory.com/105)
+한글 설치 [link](https://iworldt.tistory.com/11) & [link](https://staraube.tistory.com/105) \
 Slack 설치 [link](https://slack.com/intl/ko-kr/downloads/linux) \
 gcc 설치
 ```
