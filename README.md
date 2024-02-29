@@ -38,8 +38,9 @@ source ~/.bashrc
 3) cudNN [download link](https://developer.nvidia.com/rdp/cudnn-archive) [install guide1](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html) [install guide2](https://kyumdoctor.co.kr/30) [install guide3_Ubuntu22.04](https://webnautes.tistory.com/1844) [install guide4_Ubuntu22.04](https://gist.github.com/denguir/b21aa66ae7fb1089655dd9de8351a202)
 4) Final check
 ```
-nvcc --version or nvcc -V(check CUDA version)
 nvidia-smi (check whether the GPU is correctly detected)
+nvcc --version or nvcc -V(check CUDA version)
+cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2 (check cudnn version)
 ```
 
 ### CUDA가 여러개 설치되어있고 필요할 때마다 변경해야하는 경우
