@@ -146,6 +146,7 @@ sudo apt-get install htop
 sudo apt-get install gpustat
 sudo apt-get install imagemagick (==> can use 'display' command in terminal to view image)
 ```
+# Tmux [설명 & 사용] = [link](https://hbase.tistory.com/200)\
 
 ### git ssh key 생성 및 등록
 1) key 생성 및 local ssh-agent에 등록 [link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
