@@ -35,6 +35,29 @@ export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
 source ~/.bashrc
 ```
 
+```
+#만약에 deb 파일로 설치한다면,
+# 1. Pin the CUDA Repository Priority:
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin
+sudo mv cuda-ubuntu2204.pin /etc/apt/preferences.d/cuda-repository-pin-600
+# 2. Download and Install the CUDA .deb File:
+wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda-repo-ubuntu2204-11-8-local_11.8.0-520.61.05-1_amd64.deb
+sudo dpkg -i cuda-repo-ubuntu2204-11-8-local_11.8.0-520.61.05-1_amd64.deb
+# 3. Add the GPG Key:
+sudo cp /var/cuda-repo-ubuntu2204-11-8-local/cuda-*-keyring.gpg /usr/share/keyrings/
+# 4. Update Package List:
+sudo apt-get update
+# 5. Install CUDA Toolkit Without the Driver:
+sudo apt-get install -y cuda-toolkit-11-8
+
+
+# Verify the Installation
+# Check CUDA Version:
+nvcc -V
+# Check driver Version (driver 없이 잘 깔렸는지)
+nvidia-smi
+```
+
 3) cudNN [download link](https://developer.nvidia.com/rdp/cudnn-archive) [install guide1](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html) [install guide2](https://kyumdoctor.co.kr/30) [install guide3_Ubuntu22.04](https://webnautes.tistory.com/1844) [install guide4_Ubuntu22.04](https://gist.github.com/denguir/b21aa66ae7fb1089655dd9de8351a202)\
 ```
 cd ~/다운로드
@@ -45,6 +68,29 @@ sudo cp cudnn-*-archive/include/cudnn*.h /usr/local/cuda/include
 sudo cp -P cudnn-*-archive/lib/libcudnn* /usr/local/cuda/lib64 
 sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*
 ```
+
+```
+# 만약에 deb 파일로 설치한다면,
+# 홈페이지에서 우선 다운받고
+# https://developer.nvidia.com/rdp/cudnn-archive
+# Step 1: Install the Local cuDNN Repository, 버전 맞춰서
+sudo dpkg -i cudnn-local-repo-ubuntu2204-8.9.2.26_1.0-1_amd64.deb
+# Copy the GPG key to ensure the repository is secure:
+sudo cp /var/cudnn-local-repo-ubuntu2204-8.9.2.26/cudnn-local-*-keyring.gpg /usr/share/keyrings/
+# Step 2: Update Package List
+sudo apt-get update
+# Step 3: Install cuDNN Packages
+sudo apt-get install -y libcudnn8 libcudnn8-dev
+# Step 4: Verify the Installation
+cat /usr/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+ls -l /usr/lib/x86_64-linux-gnu/libcudnn*
+# You should see files like:
+/usr/lib/x86_64-linux-gnu/libcudnn.so
+/usr/lib/x86_64-linux-gnu/libcudnn.so.8
+/usr/lib/x86_64-linux-gnu/libcudnn.so.8.9.2
+```
+
+
 4) Final check
 ```
 nvidia-smi (check whether the GPU is correctly detected)
