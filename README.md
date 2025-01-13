@@ -127,28 +127,10 @@ source ~/.profile
 nvcc -V
 ```
 
-### z shell 설치
-1) zsh 설치
-```
-sudo apt-get install zsh
-zsh --version
-chsh -s /usr/bin/zsh (z shell을 기본 쉘로 설정)
-이후 꼭 linux에서 로그아웃했다가 다시 로그인하기! 그래야 기본 쉘 바뀜!
-echo $SHELL (—>   /usr/bin/zsh 이 나와야함)
-```
-2) oh-my-zsh 설치
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-3) Powerlevel10k 설치 [link](https://velog.io/@t1won/Ubuntu-powerlevel10k-%EC%84%A4%EC%B9%98) [link](https://github.com/romkatv/powerlevel10k#installation)
-(git clone 후 ‘~/zshrc’ 안을 ZSH_THEME="powerlevel10k/powerlevel10k”로 수정)
-4) 터미널 나갔다가 들어오면 하라는대로 잘 따라가면 됨
-5) .p10k.zsh 가서 색변경 (source ~/.p10k.zsh 해야 적용됨) [link](https://github.com/romkatv/powerlevel10k/blob/master/README.md#change-the-color-palette-used-by-your-terminal)
-```
-typeset -g POWERLEVEL9K_DIR_BACKGROUND=27
-typeset -g POWERLEVEL9K_DIR_FOREGROUND=254
-typeset -g POWERLEVEL9K_ANACONDA_BACKGROUND=27
-```
+### ROS2 설치
+1) install the ros2 in ubuntu 22.04
+   [link](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
+
 
 ### vim 및 vim pluggin 설치 (자동 완성 플러그인은 바로 밑에 부연 설명. 과정이 김)
 1) vim 설치
