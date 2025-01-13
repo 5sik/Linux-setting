@@ -128,7 +128,7 @@ nvcc -V
 ```
 
 ### ROS2 설치
-1) install the ros2 in ubuntu 22.04
+1) install the ros2 in ubuntu 22.04\
    [link](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 
 
