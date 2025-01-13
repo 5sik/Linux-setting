@@ -128,8 +128,7 @@ nvcc -V
 ```
 
 ### ROS2 설치
-1) install the ros2 in ubuntu 22.04\
-   [link](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
+1) install the ROS2 in ubuntu 22.04 [link](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 
 
 ### vim 및 vim pluggin 설치 (자동 완성 플러그인은 바로 밑에 부연 설명. 과정이 김)
