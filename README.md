@@ -58,7 +58,7 @@ nvcc -V
 nvidia-smi
 ```
 
-3) cudNN [download link](https://developer.nvidia.com/rdp/cudnn-archive) [install guide1](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html) [install guide2](https://kyumdoctor.co.kr/30) [install guide3_Ubuntu22.04](https://webnautes.tistory.com/1844) [install guide4_Ubuntu22.04](https://gist.github.com/denguir/b21aa66ae7fb1089655dd9de8351a202)\
+3) cudNN [download link](https://developer.nvidia.com/rdp/cudnn-archive) [install guide1](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html) [install guide2](https://kyumdoctor.co.kr/30) [install guide3_Ubuntu22.04](https://webnautes.tistory.com/1844) [install guide4_Ubuntu22.04](https://gist.github.com/denguir/b21aa66ae7fb1089655dd9de8351a202) [install guide5 22.04] (https://starlane.tistory.com/1)\
 ```
 cd ~/다운로드
 
