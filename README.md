@@ -98,6 +98,7 @@ ls -l /usr/lib/x86_64-linux-gnu/libcudnn*
 nvidia-smi (check whether the GPU is correctly detected)
 nvcc --version or nvcc -V(check CUDA version)
 cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2 (check cudnn version)
+cat /usr/include/x86_64-linux-gnu/cudnn_version.h | grep CUDNN_MAJOR -A 2 (For 22.04 RTX5080)
 ```
 
 ### CUDA가 여러개 설치되어있고 필요할 때마다 변경해야하는 경우
